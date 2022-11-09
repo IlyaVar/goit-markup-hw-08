@@ -1,0 +1,32 @@
+// TEXT
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap');
+$ff-logo: Raleway, sans-serif;
+
+// COLORS
+$main-bg: #ffffff;
+$main-text: #212121;
+$second-text: #757575;
+$logo: #2196f3;
+$accent-text: #2196f3;
+$first-section-bg: #2f303a;
+$second-section-bg: #ffffff;
+$third-section-bg: #f5f4fa;
+$footer-bg: #2f303a;
+$active-btn: #188ce8;
+$footer-nav: rgba(255, 255, 255, 0.6);
+$social-icon: #afb1b8;
+$form-border: rgba(33, 33, 33, 0.2);
+$footer-email: rgba(255, 255, 255, 0.3);
+
+// MIXIN
+@mixin header-link{
+    color: $main-text;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+@mixin footer-text{
+    font-size: 14px;
+  line-height: 1.71;
+}
