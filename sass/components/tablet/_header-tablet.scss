@@ -1,8 +1,9 @@
 @media screen and (min-width: 767px) {
-    .header-nav{
-      & .logo{
-        margin-right: 88px;
-    }}
+  .header-nav {
+    & .logo {
+      margin-right: 88px;
+    }
+  }
   .site-nav {
     display: flex;
     &.list .current {
@@ -58,7 +59,10 @@
     }
   }
 
-.nav-icon {
-  margin-right: 10px;
-}
+  .nav-icon {
+    margin-right: 10px;
+  }
+  .header-btn{
+    display: none;
+  }
 }
