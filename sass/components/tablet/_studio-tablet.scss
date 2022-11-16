@@ -1,0 +1,60 @@
+.benefits {
+  @media screen and (min-width: 767px) {
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+  }
+
+  @media screen and (min-width: 767px) {
+    &__item {
+      max-width: 354px;
+      width: calc((100% - 30px) / 2);
+    }
+  }
+  @media screen and (max-width: 767px) {
+    &__subdject {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+.team {
+  @media screen and (min-width: 767px) {
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    &__item:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (min-width: 767px) {
+    &__item {
+      width: 354px;
+    }
+  }
+}
+.clients {
+  @media screen and (min-width: 767px) {
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+  }
+
+  @media screen and (min-width: 767px) {
+    &__item {
+      height: 92px;
+      width: calc((100% - 60px) / 3);
+    }
+  }
+}

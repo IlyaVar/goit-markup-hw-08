@@ -1,0 +1,10 @@
+@media screen and (min-width:1199px) {
+.hero {
+    padding: 200px 0;
+    height: 600px;
+    &__text {
+      font-size: 44px;
+      line-height: 1.36;
+      max-width: 696px;
+    }
+}}

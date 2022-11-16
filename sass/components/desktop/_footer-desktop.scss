@@ -1,0 +1,42 @@
+@media screen and (min-width: 1199px) {
+  .footer {
+    text-align: left;
+    &__list {
+      display: flex;
+      align-items: baseline;
+    }
+    &__box {
+      display: flex;
+      align-items: baseline;
+    }
+    &__logo {
+      margin-right: 70px;
+      width: 231px;
+    }
+    &__title {
+      text-align: left;
+    }
+  }
+  .address {
+    margin-bottom: 0;
+    &__list:not(:last-child) {
+      margin-bottom: 9px;
+    }
+  }
+  .footer-social {
+    margin-right: 93px;
+    &__list {
+      margin-bottom: 0;
+    }
+  }
+  .description-form {
+    min-width: 570px;
+    display: flex;
+    height: 50px;
+
+    &__email {
+      min-width: 358px;
+      margin-right: 12px;
+    }
+  }
+}
