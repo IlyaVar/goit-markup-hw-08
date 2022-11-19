@@ -109,10 +109,15 @@ color: $accent-text;
 }
 .social-mob{
   display: flex;
+  flex-wrap: wrap;
   &__item:not(:last-child){
     padding-right: 10px;
     margin-right: 10px;
-    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    border-right: 1px solid rgba(33, 33, 33, 0.2);}
+    @media screen and (max-width:450px){
+      &__item:nth-child(-n+2) {
+        margin-bottom: 10px;
+      }
   }
   &__link{
     font-weight: 500;
