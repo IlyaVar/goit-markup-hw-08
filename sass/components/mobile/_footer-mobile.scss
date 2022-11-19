@@ -73,7 +73,7 @@
   .description-form {
   
     &__email {
-      min-width: 450px;
+      min-width: calc(100% - 30px);
     
       height: 50px;
       padding: 15px 16px;
@@ -89,6 +89,9 @@
     &__email:focus {
       border-color: $accent-text;
       outline: none;
+      @media screen and (min-width: 480px) {
+        width: 450px;
+      }
     }
   }
   .footer-btn {

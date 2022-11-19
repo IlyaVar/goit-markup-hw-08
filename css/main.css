@@ -32,11 +32,15 @@ ul {
 }
 
 .container {
-  width: 480px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
 }
 
 @media screen and (min-width: 767px) {
@@ -389,7 +393,7 @@ ul {
 }
 
 .description-form__email {
-  min-width: 450px;
+  min-width: calc(100% - 30px);
   height: 50px;
   padding: 15px 16px;
   margin-bottom: 20px;
@@ -403,6 +407,11 @@ ul {
 .description-form__email:focus {
   border-color: #2196f3;
   outline: none;
+}
+@media screen and (min-width: 480px) {
+  .description-form__email:focus {
+    width: 450px;
+  }
 }
 
 .footer-btn {
@@ -588,7 +597,11 @@ ul {
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  width: 450px;
+}
+@media screen and (min-width: 480px) {
+  .team__item {
+    width: 450px;
+  }
 }
 
 .team-thumb {
