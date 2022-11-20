@@ -25,7 +25,9 @@
             <li class="site-nav__item">
               <a href="./portfolio.html" class="link current">Портфоліо</a>
             </li>
-            <li class="site-nav__item"><a href="#" class="link">Контакти</a></li>
+            <li class="site-nav__item">
+              <a href="#" class="link">Контакти</a>
+            </li>
           </ul>
         </nav>
 
@@ -45,10 +47,9 @@
             >
           </li>
         </ul>
-        <button type="button" class="header-btn btn" menu-mob-open> 
+        <button type="button" class="header-btn btn" menu-mob-open>
           <svg width="40" height="40">
-            <use
-            href="./images/icons.svg#icon-menu-mob"></use>
+            <use href="./images/icons.svg#icon-menu-mob"></use>
           </svg>
         </button>
       </div>
@@ -91,6 +92,7 @@
                 <div class="img__thumb">
                   <img
                     class="img"
+                    srcset="./images/tk.jpg 1x, ./images/tk@2x.jpg 2x"
                     src="./images/tk.jpg"
                     alt="компʼютер"
                     width="370"
@@ -115,6 +117,7 @@
                 ><div class="img__thumb">
                   <img
                     class="img"
+                    srcset="./images/poster.jpg 1x, ./images/poster@2x.jpg 2x"
                     src="./images/poster.jpg"
                     alt="гравці баскетболу"
                     width="370"
@@ -141,6 +144,10 @@
                 <div class="img__thumb">
                   <img
                     class="img"
+                    srcset="
+                      ./images/restaurant.jpg    1x,
+                      ./images/restaurant@2x.jpg 2x
+                    "
                     src="./images/restaurant.jpg"
                     alt="логотип риба"
                     width="370"
@@ -165,6 +172,7 @@
                 <div class="img__thumb">
                   <img
                     class="img"
+                    srcset="./images/prime.jpg 1x, ./images/prime@2x.jpg 2x"
                     src="./images/prime.jpg"
                     alt="навушники"
                     width="370"
@@ -189,6 +197,7 @@
                 <div class="img__thumb">
                   <img
                     class="img"
+                    srcset="./images/boxes.jpg 1x, ./images/boxes@2x.jpg 2x"
                     src="./images/boxes.jpg"
                     alt="дві коробки"
                     width="370"
@@ -213,6 +222,10 @@
                 <div class="img__thumb">
                   <img
                     class="img"
+                    srcset="
+                      ./images/inspiration.jpg    1x,
+                      ./images/inspiration@2x.jpg 2x
+                    "
                     src="./images/inspiration.jpg"
                     alt="монітор"
                     width="370"
@@ -237,6 +250,10 @@
                 <div class="img__thumb">
                   <img
                     class="img"
+                    srcset="
+                      ./images/limiteded.jpg    1x,
+                      ./images/limiteded@2x.jpg 2x
+                    "
                     src="./images/limiteded.jpg"
                     alt="книга"
                     width="370"
@@ -261,6 +278,7 @@
                 <div class="img__thumb">
                   <img
                     class="img"
+                    srcset="./images/lab.jpg 1x, ./images/lab@2x.jpg 2x"
                     src="./images/lab.jpg"
                     alt="бірка"
                     width="370"
@@ -285,6 +303,7 @@
                 <div class="img__thumb">
                   <img
                     class="img"
+                    srcset="./images/growbi.jpg 1x, ./images/growbi@2x.jpg 2x"
                     src="./images/growbi.jpg"
                     alt="ноутбук"
                     width="370"
@@ -311,80 +330,84 @@
     <footer class="footer">
       <div class="container">
         <div class="list footer__list">
-          <div class="footer__box"><div class="footer__logo">
-            <a class="logo link logo-footer" href="./index.html"
-              >Web<span class="logo-footer__text">Studio</span></a
-            >
+          <div class="footer__box">
+            <div class="footer__logo">
+              <a class="logo link logo-footer" href="./index.html"
+                >Web<span class="logo-footer__text">Studio</span></a
+              >
 
-            <address class="address">
-              <ul class="list">
-                <li class="address__list">
-                  <a
-                    class="address__text link"
-                    href="https://goo.gl/maps/Pw9cZAzKq1KJY9Lq5"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    >м. Київ, пр-т Лесі Українки, 26</a
-                  >
+              <address class="address">
+                <ul class="list">
+                  <li class="address__list">
+                    <a
+                      class="address__text link"
+                      href="https://goo.gl/maps/Pw9cZAzKq1KJY9Lq5"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      >м. Київ, пр-т Лесі Українки, 26</a
+                    >
+                  </li>
+                  <li class="address__list">
+                    <a
+                      class="address__nav link"
+                      href="mailto:info@devstudio.com"
+                      >info@devstudio.com</a
+                    >
+                  </li>
+                  <li class="address__list">
+                    <a class="address__nav link" href="tel:+380961111111"
+                      >+38 096 111 11 11</a
+                    >
+                  </li>
+                </ul>
+              </address>
+            </div>
+            <div class="footer-social">
+              <h3 class="footer__title">Приєднуйтесь</h3>
+              <ul class="footer-social__list list">
+                <li class="footer-social__icon">
+                  <a class="footer-social__link" href="#">
+                    <svg width="20px" height="20px">
+                      <use
+                        class="icon"
+                        href="./images/icons.svg#icon-instagram"
+                      ></use>
+                    </svg>
+                  </a>
                 </li>
-                <li class="address__list">
-                  <a class="address__nav link" href="mailto:info@devstudio.com"
-                    >info@devstudio.com</a
-                  >
+                <li class="footer-social__icon">
+                  <a class="footer-social__link" href="#">
+                    <svg width="20px" height="20px">
+                      <use
+                        class="icon"
+                        href="./images/icons.svg#icon-twitter"
+                      ></use>
+                    </svg>
+                  </a>
                 </li>
-                <li class="address__list">
-                  <a class="address__nav link" href="tel:+380961111111"
-                    >+38 096 111 11 11</a
-                  >
+                <li class="footer-social__icon">
+                  <a class="footer-social__link" href="#">
+                    <svg width="20px" height="20px">
+                      <use
+                        class="icon"
+                        href="./images/icons.svg#icon-facebook"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer-social__icon">
+                  <a class="footer-social__link" href="#">
+                    <svg width="20px" height="20px">
+                      <use
+                        class="icon"
+                        href="./images/icons.svg#icon-linkedin"
+                      ></use>
+                    </svg>
+                  </a>
                 </li>
               </ul>
-            </address>
+            </div>
           </div>
-          <div class="footer-social">
-            <h3 class="footer__title">Приєднуйтесь</h3>
-            <ul class="footer-social__list list">
-              <li class="footer-social__icon">
-                <a class="footer-social__link" href="#">
-                  <svg width="20px" height="20px">
-                    <use
-                      class="icon"
-                      href="./images/icons.svg#icon-instagram"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="footer-social__icon">
-                <a class="footer-social__link" href="#">
-                  <svg width="20px" height="20px">
-                    <use
-                      class="icon"
-                      href="./images/icons.svg#icon-twitter"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="footer-social__icon">
-                <a class="footer-social__link" href="#">
-                  <svg width="20px" height="20px">
-                    <use
-                      class="icon"
-                      href="./images/icons.svg#icon-facebook"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="footer-social__icon">
-                <a class="footer-social__link" href="#">
-                  <svg width="20px" height="20px">
-                    <use
-                      class="icon"
-                      href="./images/icons.svg#icon-linkedin"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div></div>
 
           <div>
             <h3 class="footer__title">Підпишіться на розсилку</h3>
@@ -407,58 +430,55 @@
         </div>
       </div>
     </footer>
-      <!-- menu mob modal -->
-      <div class="menu-mob is-hidden" menu-mob>
-        <div class="modal-mob">
-          <button  type="button" class="btn modal-mob__btn" menu-mob-close>
-            <svg width="40px" height="40px">
-              <use href="./images/icons.svg#icon-close-mob"></use>
-            </svg>
-          </button>
-          <nav class="mobile-nav">
-            <ul class="mobile-nav__list list">
-              <li class="mobile-nav__item">
-                <a href="./index.html" class="link">Студія</a>
-              </li>
-              <li class="mobile-nav__item">
-                <a href="./portfolio.html" class="link">Портфоліо</a>
-              </li>
-              <li class="mobile-nav__item"><a href="#" class="link">Контакти</a></li>
-            </ul>
-            <ul class="list contact-mob">
-              
-              <li class="contact-mob__item">
-                <a class="contact-mob__tel link" href="tel:+380961111111"
-                  >+38 096 111 11 11</a
-                >
-              </li>
-              <li class="contact-mob__item">
-                <a class="contact-mob__mail link" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
-              </li>
-            </ul>
-            <ul class="social-mob list">
-              <li class="social-mob__item">
-                <a class="social-mob__link link" href="#">Instagram
-                </a>
-              </li>
-              <li class="social-mob__item">
-                <a class="social-mob__link link" href="#">Twitter
-                </a>
-              </li>
-              <li class="social-mob__item">
-                <a class="social-mob__link link" href="#">Facebook
-                </a>
-              </li>
-              <li class="social-mob__item">
-                <a class="social-mob__link link" href="#">LinkedIn
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
+    <!-- menu mob modal -->
+    <div class="menu-mob is-hidden" menu-mob>
+      <div class="modal-mob">
+        <button type="button" class="btn modal-mob__btn" menu-mob-close>
+          <svg width="40px" height="40px">
+            <use href="./images/icons.svg#icon-close-mob"></use>
+          </svg>
+        </button>
+        <nav class="mobile-nav">
+          <ul class="mobile-nav__list list">
+            <li class="mobile-nav__item">
+              <a href="./index.html" class="link">Студія</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a href="./portfolio.html" class="link">Портфоліо</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a href="#" class="link">Контакти</a>
+            </li>
+          </ul>
+          <ul class="list contact-mob">
+            <li class="contact-mob__item">
+              <a class="contact-mob__tel link" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+            <li class="contact-mob__item">
+              <a class="contact-mob__mail link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="social-mob list">
+            <li class="social-mob__item">
+              <a class="social-mob__link link" href="#">Instagram </a>
+            </li>
+            <li class="social-mob__item">
+              <a class="social-mob__link link" href="#">Twitter </a>
+            </li>
+            <li class="social-mob__item">
+              <a class="social-mob__link link" href="#">Facebook </a>
+            </li>
+            <li class="social-mob__item">
+              <a class="social-mob__link link" href="#">LinkedIn </a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <script src="./js/mobile-menu.js"></script>
+    </div>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

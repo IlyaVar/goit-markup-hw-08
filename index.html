@@ -9,7 +9,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    
+
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
@@ -27,7 +27,9 @@
             <li class="site-nav__item">
               <a href="./portfolio.html" class="link">Портфоліо</a>
             </li>
-            <li class="site-nav__item"><a href="#" class="link">Контакти</a></li>
+            <li class="site-nav__item">
+              <a href="#" class="link">Контакти</a>
+            </li>
           </ul>
         </nav>
 
@@ -47,10 +49,9 @@
             >
           </li>
         </ul>
-        <button type="button" class="header-btn btn" menu-mob-open> 
+        <button type="button" class="header-btn btn" menu-mob-open>
           <svg width="40" height="40">
-            <use
-            href="./images/icons.svg#icon-menu-mob"></use>
+            <use href="./images/icons.svg#icon-menu-mob"></use>
           </svg>
         </button>
       </div>
@@ -128,6 +129,7 @@
               <div class="img__thumb">
                 <img
                   class="img"
+                  srcset="./images/img.jpg 1x, ./images/img@2x.jpg 2x"
                   src="./images/img.jpg"
                   alt="Створення структури сайту"
                   width="370"
@@ -141,6 +143,7 @@
               <div class="img__thumb">
                 <img
                   class="img"
+                  srcset="./images/img-2.jpg 1x, ./images/img-2@2x.jpg 2x"
                   src="./images/img-2.jpg"
                   alt="Адаптація до всіх платформ"
                   width="370"
@@ -154,6 +157,7 @@
               <div class="img__thumb">
                 <img
                   class="img"
+                  srcset="./images/img-3.jpg 1x, ./images/img-3@2x.jpg 2x"
                   src="./images/img-3.jpg"
                   alt="Створення дизайну сайту"
                   width="370"
@@ -174,6 +178,7 @@
             <li class="team__item">
               <img
                 class="img"
+                srcset="./images/ihor.jpg 1x, ./images/ihor@2x.jpg 2x"
                 src="./images/ihor.jpg"
                 alt="Ігор Дем'яненко"
                 width="270"
@@ -228,6 +233,7 @@
             <li class="team__item">
               <img
                 class="img"
+                srcset="./images/olha.jpg 1x, ./images/olha@2x.jpg 2x"
                 src="./images/olha.jpg"
                 alt="Ольга Рєпіна"
                 width="270"
@@ -282,6 +288,7 @@
             <li class="team__item">
               <img
                 class="img"
+                srcset="./images/mikola.jpg 1x, ./images/mikola@2x.jpg 2x"
                 src="./images/mikola.jpg"
                 alt="Микола Тарасов"
                 width="270"
@@ -336,6 +343,7 @@
             <li class="team__item">
               <img
                 class="img"
+                srcset="./images/mihailo.jpg 1x, ./images/mihailo@2x.jpg 2x"
                 src="./images/mihailo.jpg"
                 alt="Михайло Єрмаков"
                 width="270"
@@ -440,80 +448,84 @@
     <footer class="footer">
       <div class="container">
         <div class="list footer__list">
-          <div class="footer__box"><div class="footer__logo">
-            <a class="logo link logo-footer" href="./index.html"
-              >Web<span class="logo-footer__text">Studio</span></a
-            >
+          <div class="footer__box">
+            <div class="footer__logo">
+              <a class="logo link logo-footer" href="./index.html"
+                >Web<span class="logo-footer__text">Studio</span></a
+              >
 
-            <address class="address">
-              <ul class="list">
-                <li class="address__list">
-                  <a
-                    class="address__text link"
-                    href="https://goo.gl/maps/Pw9cZAzKq1KJY9Lq5"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    >м. Київ, пр-т Лесі Українки, 26</a
-                  >
+              <address class="address">
+                <ul class="list">
+                  <li class="address__list">
+                    <a
+                      class="address__text link"
+                      href="https://goo.gl/maps/Pw9cZAzKq1KJY9Lq5"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      >м. Київ, пр-т Лесі Українки, 26</a
+                    >
+                  </li>
+                  <li class="address__list">
+                    <a
+                      class="address__nav link"
+                      href="mailto:info@devstudio.com"
+                      >info@devstudio.com</a
+                    >
+                  </li>
+                  <li class="address__list">
+                    <a class="address__nav link" href="tel:+380961111111"
+                      >+38 096 111 11 11</a
+                    >
+                  </li>
+                </ul>
+              </address>
+            </div>
+            <div class="footer-social">
+              <h3 class="footer__title">Приєднуйтесь</h3>
+              <ul class="footer-social__list list">
+                <li class="footer-social__icon">
+                  <a class="footer-social__link" href="#">
+                    <svg width="20px" height="20px">
+                      <use
+                        class="icon"
+                        href="./images/icons.svg#icon-instagram"
+                      ></use>
+                    </svg>
+                  </a>
                 </li>
-                <li class="address__list">
-                  <a class="address__nav link" href="mailto:info@devstudio.com"
-                    >info@devstudio.com</a
-                  >
+                <li class="footer-social__icon">
+                  <a class="footer-social__link" href="#">
+                    <svg width="20px" height="20px">
+                      <use
+                        class="icon"
+                        href="./images/icons.svg#icon-twitter"
+                      ></use>
+                    </svg>
+                  </a>
                 </li>
-                <li class="address__list">
-                  <a class="address__nav link" href="tel:+380961111111"
-                    >+38 096 111 11 11</a
-                  >
+                <li class="footer-social__icon">
+                  <a class="footer-social__link" href="#">
+                    <svg width="20px" height="20px">
+                      <use
+                        class="icon"
+                        href="./images/icons.svg#icon-facebook"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer-social__icon">
+                  <a class="footer-social__link" href="#">
+                    <svg width="20px" height="20px">
+                      <use
+                        class="icon"
+                        href="./images/icons.svg#icon-linkedin"
+                      ></use>
+                    </svg>
+                  </a>
                 </li>
               </ul>
-            </address>
+            </div>
           </div>
-          <div class="footer-social">
-            <h3 class="footer__title">Приєднуйтесь</h3>
-            <ul class="footer-social__list list">
-              <li class="footer-social__icon">
-                <a class="footer-social__link" href="#">
-                  <svg width="20px" height="20px">
-                    <use
-                      class="icon"
-                      href="./images/icons.svg#icon-instagram"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="footer-social__icon">
-                <a class="footer-social__link" href="#">
-                  <svg width="20px" height="20px">
-                    <use
-                      class="icon"
-                      href="./images/icons.svg#icon-twitter"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="footer-social__icon">
-                <a class="footer-social__link" href="#">
-                  <svg width="20px" height="20px">
-                    <use
-                      class="icon"
-                      href="./images/icons.svg#icon-facebook"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="footer-social__icon">
-                <a class="footer-social__link" href="#">
-                  <svg width="20px" height="20px">
-                    <use
-                      class="icon"
-                      href="./images/icons.svg#icon-linkedin"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div></div>
 
           <div>
             <h3 class="footer__title">Підпишіться на розсилку</h3>
@@ -621,7 +633,7 @@
     <!-- menu mob modal -->
     <div class="menu-mob is-hidden" menu-mob>
       <div class="modal-mob">
-        <button  type="button" class="btn modal-mob__btn" menu-mob-close>
+        <button type="button" class="btn modal-mob__btn" menu-mob-close>
           <svg width="40px" height="40px">
             <use href="./images/icons.svg#icon-close-mob"></use>
           </svg>
@@ -634,10 +646,11 @@
             <li class="mobile-nav__item">
               <a href="./portfolio.html" class="link">Портфоліо</a>
             </li>
-            <li class="mobile-nav__item"><a href="#" class="link">Контакти</a></li>
+            <li class="mobile-nav__item">
+              <a href="#" class="link">Контакти</a>
+            </li>
           </ul>
           <ul class="list contact-mob">
-            
             <li class="contact-mob__item">
               <a class="contact-mob__tel link" href="tel:+380961111111"
                 >+38 096 111 11 11</a
@@ -651,20 +664,16 @@
           </ul>
           <ul class="social-mob list">
             <li class="social-mob__item">
-              <a class="social-mob__link link" href="#">Instagram
-              </a>
+              <a class="social-mob__link link" href="#">Instagram </a>
             </li>
             <li class="social-mob__item">
-              <a class="social-mob__link link" href="#">Twitter
-              </a>
+              <a class="social-mob__link link" href="#">Twitter </a>
             </li>
             <li class="social-mob__item">
-              <a class="social-mob__link link" href="#">Facebook
-              </a>
+              <a class="social-mob__link link" href="#">Facebook </a>
             </li>
             <li class="social-mob__item">
-              <a class="social-mob__link link" href="#">LinkedIn
-              </a>
+              <a class="social-mob__link link" href="#">LinkedIn </a>
             </li>
           </ul>
         </nav>
