@@ -17,7 +17,13 @@
     
     &__item {
       max-width: 450px;
+      @media screen and (max-width:767px) {
+      &:not(:last-child){
+        margin-bottom: 30px;
+      }
+      }
     }
+   
     
     &__subdject {
       font-size: 14px;

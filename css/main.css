@@ -579,6 +579,11 @@ ul {
 .benefits__item {
   max-width: 450px;
 }
+@media screen and (max-width: 767px) {
+  .benefits__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
 .benefits__subdject {
   font-size: 14px;
   line-height: 1.14;
